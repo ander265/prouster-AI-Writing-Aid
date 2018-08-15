@@ -1,7 +1,11 @@
-# data_science_experiments
+# Data Science Projects (In Development)
 
 This repo is to document for project ideas I am toying with for my Capstone at Galvanize
 
-### An scrobbler application from local radio stations to streaming services, synchronizing to a new playlist (e.g. the automated "Liked From Shazam" playlist in Spotify)
+### A scrobbler application from local radio stations to streaming services
+* Synchronizing to a new playlist 
+* (e.g. the automated "Liked From Shazam" playlist in Spotify)
 
-### A neural network to generate writing prompts to stimulate creative thinking.
+### A neural network to generate writing prompts
+* Stimulate creative thinking
+* Subsequent prompts based on user response
