@@ -1,8 +1,9 @@
 from flask import Flask, render_template
+from download_model import download_model
 import textgenerator
 
 
-
+download_model()
 tg = textgenerator.TextGenerator('tg.h5','documents.h5')
 print(tg.generate_text())
 app = Flask(__name__)
