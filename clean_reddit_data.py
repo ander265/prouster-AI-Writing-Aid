@@ -13,7 +13,7 @@ def clean_source_data(directory):
     #data['chars'] = data['prompt'].apply(lambda x: sorted(''.join(set((str(x))))))
     return data
 
-data = clean_source_data('writingPrompts/train.wp_source')
+data = clean_source_data('data/writingPrompts/train.wp_source')
 
 prompts_as_txt = []
 for prefix in PREFIXES:
