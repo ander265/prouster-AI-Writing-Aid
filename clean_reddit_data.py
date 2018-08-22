@@ -20,6 +20,6 @@ for prefix in PREFIXES:
     prompts_as_txt.append(data['prompt'][data['prefix']==prefix].str.cat(sep = '  '))
 
 for prefix, prompts in zip(PREFIXES,prompts_as_txt):
-    with open('writingPrompts/'+prefix+'.txt', "w") as text_file:
+    with open('data/writingPrompts/'+prefix+'.txt', "w") as text_file:
         text_file.write(prompts)
 
