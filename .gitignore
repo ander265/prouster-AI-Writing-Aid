@@ -106,3 +106,7 @@ venv.bak/
 tg.h5
 
 *.tar.gz
+
+data/
+
+.vscode/
