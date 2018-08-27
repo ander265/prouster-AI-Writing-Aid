@@ -1,16 +1,23 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Prouster</title>
-</head>
-<body>
-<h1> Prouster </h1>
-<p>  Here's an idea! </p>
-<!-- TODO(Jared): Learn Flask -->
-<p>{{neural_network_output}}</p>
-<textarea rows="4" cols="50">
-Run with it!!!
-</textarea>
-<img src="/static/brain.jpg"/>
-</body>
-</html>
-
+    <head>
+       <title>Prouster</title>
+    </head>
+    <br>
+    <body>
+       <h1> <font color="f11a0a"> <i>Prouster</i></font ></h1>
+      <div class="w3-panel w3-border-top w3-border-bottom">
+      <p> <b>Here's an idea!</b></p>
+      </div> 
+       <!-- TODO(Jared): Reimplement Flask -->
+       <p>{{neural_network_output}}</p>
+       <form action="/action_page.php" id="usrform">
+        Name: <input type="text" name="usrname">
+        <input type="submit">
+</form>
+       <textarea rows="4" cols="50">
+ Run with it!!!
+ </textarea>
+       <img src="/static/brain.jpg"/>
+    </body>
+ </html>
