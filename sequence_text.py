@@ -34,7 +34,7 @@ def save_doc(lines, filename):
 
 # load document
 #in_filename = republic
-in_filename = rf
+in_filename = 'data/strings/RFs'
 doc = load_doc(in_filename)
 print(doc[:200])
 
@@ -58,4 +58,5 @@ print('Total Sequences: %d' % len(sequences))
 
 # save sequences to file
 #out_filename = 'republic_sequences.txt'
-out_filename = 'sequences.txt'
+out_filename = 'rf_sequences.txt'
+save_doc(sequences,out_filename)
