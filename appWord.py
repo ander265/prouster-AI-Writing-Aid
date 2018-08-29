@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from pickle import load
 from keras.models import load_model
 import keras.backend
@@ -27,10 +27,13 @@ def init():
 
 @app.route('/')
 def index():
-    text = tg.generate_seq()
+    text = str.capitalize(tg.generate_seq(n_words = 20)+'...')
     return render_template('website.html', 
                 neural_network_output=text)
 
+# @app.route('/submit')
+# def submit():
+#     request._get_current_object
 
 if __name__ == '__main__':
     print(("* Loading Keras model and Flask starting server...",
