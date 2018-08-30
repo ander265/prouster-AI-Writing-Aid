@@ -25,6 +25,24 @@ def clean_doc(doc):
     tokens = [word.lower() for word in tokens]
     return tokens
 
+bad_word = ['suicide']
+
+def tokenize(text):
+    tokens = []; word = ""
+    for char in text.lower():
+        if (char in string.whitespace) or (char in string.punctuation):
+            if word:
+                tokens.append(word)
+                word = ""
+            if char in string.punctuation:
+                tokens.append(char)
+            else:
+                word += char
+    return [word for word in tokens if word not in bad_word]
+
+def conjunct():
+
+
 # save tokens to file, one dialog per line
 def save_doc(lines, filename):
     data = '\n'.join(lines)
