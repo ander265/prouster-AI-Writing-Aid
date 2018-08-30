@@ -50,11 +50,8 @@ Different approaches to recurrent Neural Networks were used to build Prouster, i
 These models were trained using kernels provided by Kaggle. 
 
 ### Results:
-<<<<<<< HEAD
 ![Demo](https://raw.githubusercontent.com/ander265/prouster/master/Prompt.png)
-=======
-![Demo](https://raw.githubusercontent.com/ander265/prouster/master/static/brain.jpg)
->>>>>>> f232edd85900dfe883bbf6d96f5d1908427272d8
+
 
 ### Backlog/Next Steps:
 * Subsequent prompts based on user response
