@@ -53,5 +53,5 @@ tg = WordGenerator(
     token_file='results/tokenizer.pkl',
     key='docs')
 
-print(tg.generate_seq(n_words=20))
-print(tg.generate_seq(n_words=20))
+print('sample 1: '+tg.generate_seq(n_words=20))
+print('sample 2: '+tg.generate_seq(n_words=20))
