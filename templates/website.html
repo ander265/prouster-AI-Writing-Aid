@@ -13,11 +13,18 @@
        <p>{{neural_network_output}}</p>
        <form action="/action_page.php" id="usrform">
         Name: <input type="text" name="usrname">
-        <input type="submit">
 </form>
        <textarea rows="4" cols="50">
- Run with it!!!
+ Write a response here!
+
  </textarea>
+ <iframe name="votar" style="display:none;"></iframe>
+ <form action="tip.php" method="post" target="votar">
+       <input type="submit" value="Skicka Tips">
+       <input type="hidden" name="ad_id" value="2">            
+ </form>
+      <br>
+      <br>
        <img src="/static/brain.jpg"/>
     </body>
  </html>
