@@ -16,8 +16,6 @@ tg = textgeneratorN.WordGenerator(
     token_file='results/tokenizer.pkl',
     key='docs')
 
-#text = tg.generate_seq()
-#print(tg)
 app = Flask(__name__)
 def init():
     global model,graph
@@ -31,12 +29,7 @@ def index():
     return render_template('website.html', 
                 neural_network_output=text)
 
-# @app.route('/submit')
-# def submit():
-#     request._get_current_object
-
 if __name__ == '__main__':
     print(("* Loading Keras model and Flask starting server...",
     "please wait until server has fully started"))
-#    init()
     app.run(host='0.0.0.0', port=8080, debug=False, threaded=False)
