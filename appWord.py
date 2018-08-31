@@ -26,7 +26,7 @@ def init():
 @app.route('/')
 def index():
     text = str.capitalize(tg.generate_seq(n_words = 20)+'...')
-    return render_template('website.html', 
+    return render_template('index.html', 
                 neural_network_output=text)
 
 if __name__ == '__main__':
