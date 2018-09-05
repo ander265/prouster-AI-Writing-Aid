@@ -1,4 +1,4 @@
-# Prouster (Version 0.1)
+# Prouster (Version 0.3)
 ## A neural network to generate writing prompts
 
 
