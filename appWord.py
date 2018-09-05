@@ -17,8 +17,12 @@ tg = textgeneratorN.WordGenerator(
     token_file='results/tokenizer.pkl',
     key='docs')
 
-bad_words = ['adolf','hitler','satan','suicide', 'rape']
-conjunctions = ['m','t','s','re','ll']
+bad_words = ['adolf','hitler', 
+            'donald','trump',
+            'satan', 'depression',
+            'suicide', 'rape']
+conjunctions = ['m','t','s', 'd', 
+            're','nt','ve','ll']
 
 app = Flask(__name__)
 def init():
@@ -29,16 +33,16 @@ def init():
 
 @app.route('/')
 def index():
-    text = str.title(tg.generate_seq(n_words = 16)+'...')
-    for profanity in bad_words:
+    text = str.title(tg.generate_seq(n_words = 12)+'...')
+    for profanity in [word.title() for word in bad_words]:
         text.replace(profanity, 'galvanize')
-    for letter in conjunctions:
+    for letter in [c.title() for c in conjunctions]:
         cutoff = ' '+letter+' '
         end = ' ' + letter + '.'
         if (cutoff) in text:
-            text = text.replace(cutoff,"'"+letter+" ")
+            text = text.replace(cutoff,"'"+letter.lower()+" ")
         elif end in text:
-            text = text.replace(end, "'"+letter+".")
+            text = text.replace(end, "'"+letter.lower()+".")
     return render_template('index.html', 
                 feedback = request.args.get('response'),
                 neural_network_output=text)
