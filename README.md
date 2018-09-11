@@ -50,7 +50,7 @@ These models were trained using kernels provided by Kaggle.
 
 ### Results:
 Here is a demo of the current functionality of the Prouster website.
-[Newest Version](https://raw.githubusercontent.com/ander265/prouster/master/demo.gif)
+![Newest Version](https://raw.githubusercontent.com/ander265/prouster/master/demo.gif)
 
 ### In Development:
 * Subsequent prompts based on user response
