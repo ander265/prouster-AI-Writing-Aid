@@ -110,3 +110,9 @@ tg.h5
 data/
 
 .vscode/
+
+.goutputstream-CRLKOZ
+ObliqueStrategies-2.ipynb
+TorchDemo.ipynb
+app.py
+rNNcomparison.ipynb
