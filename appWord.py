@@ -17,7 +17,7 @@ tg = textgeneratorN.WordGenerator(
     token_file='results/tokenizer.pkl',
     key='docs')
 
-bad_words = ['adolf','hitler', 
+bad_words = ['adolf','hitler', 'neonazi', 
             'donald','trump',
             'satan', 'depression',
             'suicide', 'rape']
@@ -33,9 +33,9 @@ def init():
 
 @app.route('/')
 def index():
-    text = str.title(tg.generate_seq(n_words = 12)+'...')
+    text = str.title(tg.generate_seq(n_words = 10)+'...')
     for profanity in [word.title() for word in bad_words]:
-        text.replace(profanity, 'galvanize')
+        text = text.replace(profanity, 'Galvanize')
     for letter in [c.title() for c in conjunctions]:
         cutoff = ' '+letter+' '
         end = ' ' + letter + '.'
