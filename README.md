@@ -31,12 +31,8 @@ It is an exciting product that can be used for various purposes:
 * Writing Prompts from Reddit
 * * https://www.reddit.com/r/datasets/comments/8z1g24/rwritingprompts_dataset_for_language_models/
 
-* Oblique Strategies
-* * https://github.com/tomgp/Oblique-Strategies/tree/master/data
-
 #### Tags
 * WP - General Writing Prompt
-* OS - Oblique Strategies
 * CW - Constrained Writing
 * * Example: Write without using pronouns.
 * TT - Theme Thursday
