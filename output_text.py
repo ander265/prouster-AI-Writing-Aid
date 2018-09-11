@@ -17,7 +17,7 @@ def get_word_features(wordlist):
     return features
 #features = get_word_features(wordlist)
 
-def wordcloud_draw(data, color = 'black'):
+def wordcloud_draw(data, color = 'white'):
     words = ' '.join(data)
     cleaned_word = " ".join([word for word in words.split()
                             if 'http' not in word
