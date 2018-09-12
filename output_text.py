@@ -6,17 +6,6 @@ import matplotlib.pyplot as plt
 import random
 from thesaurus import Word
 
-def break_response(text):
-    words = nltk.tokenize.word_tokenize(text)
-    wordlist = [word for word in words if word.isalpha()]
-    return wordlist
-
-def get_word_features(wordlist):
-    wordlist = nltk.FreqDist(wordlist)
-    features = wordlist.keys()
-    return features
-#features = get_word_features(wordlist)
-
 def wordcloud_draw(data, color = 'white'):
     words = ' '.join(data)
     cleaned_word = " ".join([word for word in words.split()
@@ -36,7 +25,15 @@ def wordcloud_draw(data, color = 'white'):
     plt.show()
 #wordcloud_draw(features)
 
-def reccomend_word(wordlist):
+def break_response(text):
+    words = nltk.tokenize.word_tokenize(text)
+    wordlist = [word for word in words if word.isalpha()]
+    worddist = nltk.FreqDist(wordlist)
+    features = worddist.keys()
+    wordcloud_draw(features)
+
+def reccomend_word(text):
+    words = nltk.tokenize.word_tokenize(text)
     benedict = nltk.FreqDist(words)
     target_word = benedict.max()
     candidate_words = Word(target_word).synonyms(relevance=1)
