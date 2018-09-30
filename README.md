@@ -40,17 +40,24 @@ It is an exciting product that can be used for various purposes:
 * EU - Established Universe
 * * Example: Harry Potter Prompts.
 
+The website Prouster generates stories based off prompts with the Reality Fiction tag (RF).
+
 ### Modeling:
 Different approaches to recurrent Neural Networks were used to build Prouster, including:
 
 * PyTorch, Character-Level Model
 * Keras, Word-Level & Character-Level Model
 
-These models were trained using kernels provided by Kaggle. 
+These models were trained using kernels provided by Kaggle. The current main branch includes a website that deploys the Word-Level Keras model. 
 
 ### Results:
 Here is a demo of the current functionality of the Prouster website.
 ![Newest Version](https://raw.githubusercontent.com/ander265/prouster/master/demo.gif)
 
 ### In Development:
-* Subsequent prompts based on user response
+* IBM Watson API is being implemented for more advanced user writing style analysis. 
+* Training an Adversarial Neural Net to compare results with the current Keras functionality.
+
+## References
+* Kudos to MachineLearningMastery for the resources I needed to build the right RNN for this project.
+https://machinelearningmastery.com/how-to-develop-a-word-level-neural-language-model-in-keras/
